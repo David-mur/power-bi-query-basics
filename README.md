@@ -52,11 +52,17 @@ Se recibió un archivo crudo de ventas en formato de Excel para procesar en Powe
 Para estructurar los datos según las mejores prácticas de inteligencia de negocios, se implementó un **Modelo en Estrella (*Star Schema*)**:
 
 - **Tabla Dimensión (`D_Clientes`):** Contiene 120 registros únicos con atributos descriptivos y estáticos del cliente (`ID Cliente`, `Nombre Cliente`, `Correo Cliente`, `Telefono Cliente`, `Ciudad`, `Provincia`, `Segmento Cliente`, `Cliente Activo`, `Fecha Alta Cliente`).
-- **Tabla de Hechos (`F_Ventas`):** Registra 901 eventos transaccionales con importes, cantidades, fechas e identificadores, conservando `ID Cliente` como *Clave Foránea* (*Foreign Key*) para vincular ambas tablas en una relación **1 a Varios (1:*)**.
+- **Tabla de Hechos (`F_Ventas`):** Registra 901 eventos transaccionales con importes, cantidades, fechas e identificadores, conservando `ID Cliente` como *Clave Foránea*
+- (*Foreign Key*) para vincular ambas tablas en una relación **1 a Varios (1:*)**.
 - **Beneficio:** Reduce drásticamente la redundancia de datos, minimiza el tamaño del archivo `.pbix` y optimiza el rendimiento de consulta.
 
 ---
 
+## 5. Evidencias de los cambios realizados en Power Query
+<img width="1600" height="900" alt="WhatsApp Image 2026-10-17 at 1 51 47 AM" src="https://github.com/user-attachments/assets/9ed1524d-9718-462c-9d7c-7c06e1054cc3" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-10-17 at 1 51 31 AM" src="https://github.com/user-attachments/assets/fca66953-d55c-49d8-990d-56f240b4ba5e" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-10-17 at 1 50 34 AM" src="https://github.com/user-attachments/assets/72d589f4-5582-4d26-9b68-783eb71ba29f" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-10-17 at 1 50 19 AM" src="https://github.com/user-attachments/assets/7db3381d-64f5-4acd-a92e-31deb58dd06b" />
 
    
    
